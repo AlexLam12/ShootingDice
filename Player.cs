@@ -2,7 +2,7 @@ using System;
 
 namespace ShootingDice
 {
-    public class Player : SmackTalkingPlayer
+    public class Player 
     {
         public string Name { get; set; }
         public int DiceSize { get; set; } = 6;
@@ -20,7 +20,6 @@ namespace ShootingDice
             int otherRoll = other.Roll();
 
             Console.WriteLine($"{Name} rolls a {myRoll}");
-            SingleTaunt();
             Console.WriteLine($"{other.Name} rolls a {otherRoll}");
             if (myRoll > otherRoll)
             {
